@@ -1,1 +1,70 @@
-<h1> Hi world </h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>회원가입</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form method="post" action="joined.html">
+		<p><label>이름: <input name="name" placeholder="홍길동" required autofocus></label></p>
+		<p><label>아이디: <input name="id" placeholder="실명 말구 닉네임으로 해~^^" required></label></p>
+		<p><label>비밀번호: <input type="password" name="pw" placeholder=" ᶘ ͡°ᴥ͡°ᶅ " required></label></p>
+		<fieldset>
+			<legend>개인정보</legend>
+			<p>
+				<label>성별: </label>
+				<input type="radio" id="male" name="sex" value="male"><label for="male" checked>남성</label>
+				<input type="radio" id="female" name="sex" value="female"><label for="female">여성</label>
+				<input type="radio" id="rainbow~♡" name="sex" value="rainbow~♡"><label for="rainbow">"무지개~♡"</label>
+			</p>
+			<p><label>생년월일: <input type="date"></label></p>
+			<p><label>주민등록번호: <input type="text" name="KSN-F" maxlength="6">, <input type="password" name="KSN-B" maxlength="7"></label></p>
+			<p>
+				<label>휴대젼화: </label>
+				<select id="telCode" name="telCode">
+			    	<option value="010">010</option>
+	   				<option value="011">011</option>
+	    			<option value="016">016</option>
+	    			<option value="017">017</option>
+	    			<option value="019">019</option>
+	    		</select>
+	    		<input type="tel" name="telNum" placeholder="1234-5678">
+	    	</p>
+	    	<p><label>주소: <input name="addr" placeholder="다르게 적으면 알져~?"></label></p>
+			<p>
+				<label>임대인인지 임차인인지 똑똑히 밝혀요: ໒(ᓀ ‸ ᓂ)७ </label>
+				<input type="radio" id="L" name="L|T" value="lessor"><label for="lessor" checked>임대인 (나쁜 놈! 실은 나도... 읍읍 ( ͝° ͜ʖ͡°) )</label>
+				<input type="radio" id="T" name="L|T" value="tenant"><label for="tenant" >임차인 (불쌍한 사람! 표를 많~이 주세용~^^)</label>
+			</p>
+	    	<p><label>이메일: <input type="email" name="email" placeholder="me@WUA.com"></label></p>
+		</fieldset>
+		<fieldset>
+			<legend>관심분야</legend>
+			<h1>학술&취미</h1>
+			<p>
+			    <label><input type="checkbox" name="interest" value="engi">공학</label>
+			    <label><input type="checkbox" name="interest" value="phys">물리</label>
+			    <label><input type="checkbox" name="interest" value="arch">건축</label>
+			    <label><input type="checkbox" name="interest" value="biol">생명</label>
+			</p>
+			<p>
+			    <label><input type="checkbox" name="interest" value="musi">음악</label>
+			    <label><input type="checkbox" name="interest" value="lite">문학</label>
+			    <label><input type="checkbox" name="interest" value="fine">미술</label>
+			</p>
+			<h1>사상검증</h1>
+			<p>
+				<label>평소에 무슨 생각 하구 사세용?: </label>
+				<select id="politics" name="politics">
+			    	<option value="빨갱">북한이 좋당~! 근디, 가구싶진 않넹? 재벌은 해체해야져. 우리 나무를 보듬어요~ 밤엔 전기 막 쓸거지만요^^ 우리 모두 중국몽을 꿈꿔요~</option>
+	   				<option value="파랭">세상은 원래 조까타요. 먹구 먹히는 거지. 힘을 길러야 해염. 빨갱이는 멸해야 마땅하죠~. 우리 모두 미국과 일본을 따라잡아 잘 살아봐요!</option>
+	    			<option value="댕청">우리는 개념파 중도~. 세상에, 무슨 정치에 흑백논리예요! 중간을 지켜야지. 세상이 어떻게 돌아가는지 관심도 없답니다~~^^</option>
+	    		</select>
+	    	</p>
+		</fieldset>
+		<p><label for="comment">하고 싶은 말: </label><br><textarea id="comment" cols="50" rows="5"></textarea></p>
+		<p><button type="submit">가입하기</button><button tpye="reset">다시작성</button></p>
+	</form>
+</body>
+</html>
