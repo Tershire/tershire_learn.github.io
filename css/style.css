@@ -1,4 +1,4 @@
-/* 기본 설정 */
+/* Basic Settings */
 * {
 	margin: 0;
 	padding: 0;
@@ -7,19 +7,20 @@
 
 body {
 	background-color: #0a2859;
-	background-image: url(../images/body_bg.gif);
-	background-position: left top;
-	background-repeat: repeat-x;
+	background-image: url(../images/sky3-RE.jpg);
+	background-position: right;
+	background-repeat: repeat;
+	/* background-blend-mode: screen; */
 	font-family: "Lucida Grande", Tahoma, Verdana, Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
 	margin: 0 auto;
-	width: 900px;
+	width: 880px;
 	text-align: left;
 }
 
-/* 메인 헤더 */
+/* Main Header */
 #wrapper>header hgroup {
 	float: left;
 }
@@ -27,7 +28,7 @@ body {
 #wrapper>header hgroup h1 {
 	margin-top: 30px;
 	margin-bottom: 5px;
-	margin-left: 10px;
+	margin-left: 0px;
 	color: #F8F4D5;
 	font-size: 2em;
 }
@@ -35,11 +36,11 @@ body {
 #wrapper>header hgroup h2 {
 	margin-bottom: 30px;
 	color: #BB9F89;
-	text-align: right;
+	text-align: left;
 	font-size: 0.9em;
 }
 
-/* 네비게이션 */
+/* Navigation */
 nav {
 	float: right;
 	margin-top: 5px;
@@ -48,9 +49,9 @@ nav {
 }
 
 nav ul {
-	padding: 10px 10px 15px;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
+	padding: 10px 20px 10px 20px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 	background-color: #f8f4d5;
 }
 
@@ -86,7 +87,7 @@ nav a {
 }
 
 nav #current, nav li:hover {
-	border-radius: 7px;
+	border-radius: 3px;
 	background-color: #b71922;
 	color: white;
 }
@@ -95,7 +96,8 @@ nav #current a, nav li a:hover  {
 	color: inherit;
 }
 
-/* 슬로건 */
+
+/* Slogan */
 #slogan {
 	clear: both;
 	padding: 30px 20px 20px;
@@ -104,13 +106,13 @@ nav #current a, nav li a:hover  {
 	background-repeat: repeat;
 }
 
+/*
 #slogan img[alt="banner image"] {
 	float: right;
 }
 
 #slogan div {
 	width: 280px;
-
 }
 
 #slogan div p {
@@ -131,20 +133,21 @@ nav #current a, nav li a:hover  {
 	display: inline-block;
 	padding: 8px;
 	width: 200px;
-	background-color: #fbf7b2;
+	background-color: #0a2859;
 	vertical-align: middle;
 	font-size: 0.8em;
 	line-height: 1.2em;
 }
+*/
+
 
 /* 메인 콘텐츠 */
 #mainContents {
 	padding: 20px;
-	border-top: 1px solid #ccc;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-	background-color: white;
-	
+	border-top: 4px solid #ccc;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	background-color: rgb(252, 248, 223);	
 }
 
 /* 메인 콘텐츠 좌측 사이드 */
@@ -238,28 +241,27 @@ nav #current a, nav li a:hover  {
 }
 
 /* 메인 콘텐츠 우측 뉴스 */
-#news {
+#post {
 	display: inline-block;
 	margin-bottom: 10px;
-	margin-left: 40px;
+	margin-left: 320px;
 	width: 530px;
 	color: #2d1b12;
 	vertical-align: top;
-
 }
 
-#news article h1 {
+#post article h1 {
 	margin-bottom: 20px;
 	font-size: 1.2em;
 }
 
-#news article p {
+#post article p {
 	margin-bottom: 20px;
 	font-size: 0.8em;
 	line-height: 1.3;
 }
 
-#news hr {
+#post hr {
 	margin: 20px 0;
 	border-top:1px solid #dad9d7;
 	border-right: 1px none;
@@ -268,38 +270,38 @@ nav #current a, nav li a:hover  {
 }
 
 /* == 뉴스 아티클 표 */
-#news table {
+#post table {
 	margin-bottom: 20px;
 	width: 500px;
 	border-collapse: collapse;
 	font-size: 0.7em;
 }
 
-#news table th, td {
+#post table th, td {
 	padding: 5px;
 	border: 1px solid #ccc;
 }
 
-#news table th {
+#post table th {
 	background-image: url(../images/bg.gif);
 	text-align: center;
 }
 
-#news table #quarter {
+#post table #quarter {
 	width: 200px;
 }
 
-#news table tbody tr td:first-of-type {
+#post table tbody tr td:first-of-type {
 	text-align: center;
 	font-weight: bold;
 }
 
-#news table tbody tr td {
+#post table tbody tr td {
 	text-align: right;
 }
 
 /* == 뉴스 아티클 버튼 */
-#news article .button {
+#post article .button {
 	float: right;
 	margin-right: 20px;
 	background-image: url(../images/button_left.png);
@@ -307,7 +309,7 @@ nav #current a, nav li a:hover  {
 	background-repeat: no-repeat;
 }
 
-#news article .button a {
+#post article .button a {
 	display: block;
 	margin-left: 8px;
 	padding-top: 4px;
@@ -321,35 +323,35 @@ nav #current a, nav li a:hover  {
 	font-size: 0.8em;
 }
 
-#news article .button:hover {
+#post article .button:hover {
 	background-image: url(../images/button_left.png);
 	background-position: left top;
 
 }
 
-#news article .button:hover a {
+#post article .button:hover a {
 
 	background-image: url(../images/button_right.png);
 	background-position: right top;
 }
 
 /* == 뉴스 아티클 하단 박스 */
-#news #bottomBox {
+#post #bottomBox {
 	clear: both;
 	padding: 10px;
 	border: 1px solid #ccc;
 	background-image: url(../images/bg.gif);
 }
 
-#news #bottomBox p {
+#post #bottomBox p {
 	display: inline;
 }
 
-#news #bottomBox img {
+#post #bottomBox img {
 	vertical-align: middle;
 }
 
-#news #bottomBox .desc {
+#post #bottomBox .desc {
 	display: inline-block;
 	margin-left: 10px;
 	width: 100px;
